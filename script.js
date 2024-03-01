@@ -105,11 +105,6 @@ function fileUpload(event) {
 
             imageContainer.addEventListener('mousedown', (e) => {
                 startSelection = true;
-                spectrum = {
-                    R: { min: 255, max: 0 },
-                    G: { min: 255, max: 0 },
-                    B: { min: 255, max: 0 }
-                };
                 const { offsetX, offsetY } = e;
                 selectionBox.style.left = offsetX + 'px';
                 selectionBox.style.top = offsetY + 'px';
